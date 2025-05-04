@@ -1,6 +1,6 @@
 # 🏠🔌 Energy Consumption in Buildings – Dataset Overview
 
-## ![Schematic-diagram-of-the-grid-connected-hybrid-energy-system](https://github.com/user-attachments/assets/349872d6-d3ec-4d1f-82a8-61419e636f9b)
+## 
 
 
 ## 📄 About the Dataset
