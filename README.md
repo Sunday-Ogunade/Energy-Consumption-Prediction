@@ -1,8 +1,5 @@
 # 🏠🔌 Energy Consumption in Buildings – Dataset Overview
 
-## 
-
-
 ## 📄 About the Dataset
 
 This dataset contains information on energy consumption patterns in **residential** and **commercial** buildings. It supports classification of energy usage into **Low**, **Medium**, and **High**, based on structural, behavioral, and environmental factors.
@@ -62,3 +59,35 @@ These questions guide the analysis and dashboard insights:
 - **Bar & Column Charts** for comparison across categories
 - **Scatter Plots** to assess correlations (e.g., HVAC vs Cost)
 - **Conditional Formatting** to highlight trends in cost and efficiency
+- **Regression Analysis** using Excel's Data Analysis Toolpak for insights into cause-effect relationships
+
+---
+
+## 📉 Regression Analysis: Does Insulation Type Affect Energy Cost?
+
+A linear regression using Excel was conducted to determine whether a building's insulation type influences **Annual Energy Cost**.
+
+### 📊 Key Regression Results:
+
+| Metric                  | Value         |
+|-------------------------|---------------|
+| **R Square**            | 0.0010        |
+| **Adjusted R Square**   | -0.0020       |
+| **F-statistic**         | 0.517         |
+| **Significance F**      | 0.671         |
+| **Observations**        | 1000          |
+
+### 🔍 Coefficient Summary:
+
+| Insulation Type | Coefficient | P-Value | Interpretation |
+|------------------|-------------|---------|----------------|
+| **Intercept**    | 5320.75     | <0.001  | Baseline average annual cost |
+| **Poor**         | +115.55     | 0.563   | Slight increase (not significant) |
+| **Average**      | 0 (baseline)| —       | Reference category |
+| **Good**         | -82.80      | #NUM!   | Slight decrease (not significant) |
+
+### 🧠 Interpretation:
+
+- **Very low R² (0.001)** indicates insulation explains almost none of the variance in cost.
+- **P-values > 0.05** mean differences between insulation types are not statistically significant.
+- Conclusion: **Insulation type does not significantly impact annual energy cost** in this dataset.
